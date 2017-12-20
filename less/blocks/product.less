@@ -1,0 +1,54 @@
+.product {
+  position: relative;
+  padding: 35px 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 320px;
+    height: 7px;
+    background: url("../img/zigzag-line-desktop.png") no-repeat;
+  }
+
+  &__title {
+    padding-bottom: 5px;
+  }
+
+  &__label {
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding: 25px 0px;
+  }
+
+  &__description {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__description-cell {
+    padding: 10px 0px;
+    border-bottom: 1px solid #ececec;
+    color: @color-secondary;
+  }
+
+  &__img {
+    display: block;
+    padding: 25px 0px;
+  }
+
+  &__price {
+    text-align: center;
+    font-size: 17px;
+    color: @color-secondary;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+}
