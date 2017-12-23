@@ -1,0 +1,29 @@
+.form-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+
+  &:last-of-type {
+    padding-bottom: 0px;
+  }
+
+  &__title {
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+    color: #63d1bb;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: #62d1ba;
+      flex-grow: 1;
+      margin-left: 25px;
+    }
+  }
+}

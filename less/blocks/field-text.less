@@ -1,0 +1,35 @@
+.field-text {
+  display: block;
+  margin-top: 25px;
+
+  &__label {
+    display: block;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 0px;
+    color: rgba(68, 68, 68, 1);
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid @color-main;
+  }
+
+  &__input:focus {
+    border-color: #62d1ba;
+  }
+}
+::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
