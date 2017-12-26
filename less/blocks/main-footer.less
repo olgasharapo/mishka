@@ -2,8 +2,18 @@
   padding: 0px 30px;
   background-color: #f1f1f1;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
   &__logo {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 
   &__social {
@@ -13,12 +23,22 @@
     flex-wrap: wrap;
     min-height: 80px;
     border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: @tablet-width) {
+      min-height: 34px;
+      border-bottom: none;
+    }
   }
 
   &__copyright {
     min-height: 80px;
     padding: 23px 0px;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      min-height: 34px;
+      padding: 0px;
+    }
   }
 
   &__copyright-link {

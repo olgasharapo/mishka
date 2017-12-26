@@ -2,30 +2,66 @@
   &__field {
     padding: 40px 30px;
     padding-bottom: 0px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 70px 50px;
+      padding-bottom: 0px;
+    }
   }
 
   &__title {
     padding-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      font-size: 43px;
+      line-height: 50px;
+      padding-bottom: 60px;
+    }
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      width: 285px;
+      margin-right: 40px;
+      padding-bottom: 60px;
+    }
   }
 
   &__label {
     line-height: 30px;
     color: @color-secondary;
+
+    @media (min-width: @tablet-width) {
+      font-size: 17px;
+    }
   }
 
   &__text {
     line-height: 30px;
     color: @color-secondary;
 
+    @media (min-width: @tablet-width) {
+      font-size: 17px;
+    }
+
     &--link {
       border-bottom: 1px solid #62d1ba;
       cursor: pointer;
+
+      &:hover {
+        @media (min-width: @tablet-width) {
+          color: rgba(70, 193, 174, 0.6);
+          border-color: rgba(98, 209, 186, 0.6);
+        }
+      }
 
       &:active {
         color: rgba(70, 193, 174, 0.3);
@@ -34,12 +70,13 @@
     }
   }
 
-  &__map-img {
-    display: block;
-  }
-
   &__btn {
     width: 260px;
     margin: 40px 30px;
+
+    @media (min-width: @tablet-width) {
+      width: 230px;
+      margin: 55px auto;
+    }
   }
 }
