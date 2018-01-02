@@ -2,12 +2,26 @@
   display: block;
   margin-top: 25px;
 
+  @media (min-width: @tablet-width) {
+    width: 501px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+
   &__label {
     display: block;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
     margin-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 25px;
+      margin-bottom: 0px;
+      font-size: 19px;
+    }
   }
 
   &__input {
@@ -20,6 +34,17 @@
     border: none;
     outline: none;
     border-bottom: 2px solid @color-main;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      flex-grow: 1;
+    }
+
+    &--bg-gray {
+      @media (min-width: @tablet-width) {
+        background-color: #f1f1f1;
+      }
+    }
   }
 
   &__input:focus {

@@ -1,9 +1,20 @@
 .page-content {
   padding: 55px 30px;
   padding-top: 0px;
-  
+
+  @media (min-width: @tablet-width){
+    padding: 50px 0px;
+    padding-top: 0px;
+  }
+
   &__text {
     padding: 30px 0px;
     font-size: 13px;
+
+    @media (min-width: @tablet-width) {
+      padding: 70px 100px 20px 50px;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 }

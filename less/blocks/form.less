@@ -1,13 +1,32 @@
 .form {
+  &__add {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0px 50px;
+    }
+  }
+
   &__required {
     padding-top: 15px;
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 16px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 17px;
+      padding: 0px;
+    }
   }
 }
 
 .form-btn {
   outline: none;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    order: -1;
+  }
 }
