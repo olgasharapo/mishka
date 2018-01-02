@@ -2,28 +2,61 @@
   padding: 0px 30px;
   padding-bottom: 60px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    padding-bottom: 65px;
+  }
+
   &__description {
     border: 1px solid #ededed;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
     font-size: 17px;
     padding: 25px 0px;
     padding-left: 90px;
+
+    @media (min-width: @tablet-width) {
+      order: 1;
+      font-size: 20px;
+      padding: 35px 0;
+      padding-left: 100px;
+    }
   }
 
   &__video {
     display: block;
+
+    @media (min-width: @tablet-width) {
+      order: 0;
+    }
   }
 
   &__text {
     padding: 35px;
     font-size: 13px;
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+      padding: 0px 40px;
+      line-height: 30px;
+    }
   }
 
   &__btn {
     width: 190px;
     margin: 30px auto;
     margin-top: 0;
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+      width: 584px;
+      margin: 43px auto;
+    }
   }
 }

@@ -11,26 +11,30 @@
     <header class="main-header">
       <div class="logo">
         <a class="logo__link" href="index.html">
-          <img class="logo__img" src="img/mishka-logo-mobile.png" alt="Мишка">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
+            <img class="logo__img" src="img/mishka-logo-mobile.png" alt="Мишка">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--site-list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link main-nav__link--site-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link main-nav__link--site-link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+              <a class="main-nav__link main-nav__link--user-link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина:
+              <a class="main-nav__link main-nav__link--user-link main-nav__link--basket" href="#">Корзина:
                 <span class="main-nav__link-text">пока пуста</span>
               </a>
             </li>
@@ -57,7 +61,11 @@
       </div>
       <section class="catalog">
         <article class="card-product">
-          <img class="card-product__img" src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+            <img class="card-product__img" src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="card-product__description">
             <h2 class="card-product__title">Зайчик-попрыгайчик</h2>
             <p class="card-product__text">Рост 30 см, вес 200 г</p>
@@ -68,7 +76,11 @@
           </div>
         </article>
         <article class="card-product">
-          <img class="card-product__img" src="img/photo-2-mobile.jpg" alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+            <img class="card-product__img" src="img/photo-2-mobile.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="card-product__description">
             <h2 class="card-product__title">Корзинка для белья</h2>
             <p class="card-product__text">Диаметр 15 см, высота 10 см</p>
@@ -79,7 +91,11 @@
           </div>
         </article>
         <article class="card-product">
-          <img class="card-product__img" src="img/photo-3-mobile.jpg" alt="Большая корзинка для игрушек">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+            <img class="card-product__img" src="img/photo-3-mobile.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="card-product__description">
             <h2 class="card-product__title">Большая корзинка для игрушек</h2>
             <p class="card-product__text">Диаметр 30 см, высота 30 см</p>
@@ -93,7 +109,11 @@
       <div class="promo">
         <div class="promo__description">
           <h2 class="promo__title">Процесс производства</h2>
-          <img class="promo__video" src="img/video-mobile.jpg" alt="Процесс производства">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+            <img class="promo__video" src="img/video-mobile.jpg" alt="Процесс производства">
+          </picture>
           <p class="promo__text">
             По просьбам наших любимых фолловеров мы
             сняли для вас подробное видео о том,
@@ -105,7 +125,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
-        <img class="main-footer__logo-img" src="" alt="Мишка">
+        <img class="main-footer__logo-img" src="img/logo-footer.png" alt="Мишка">
       </div>
       <div class="main-footer__social">
         <a class="social-btn" href="#" aria-label="инстаграм"></a>

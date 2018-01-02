@@ -1,8 +1,32 @@
 .site-bar {
   background-color: #f1f1f1;
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 0 50px;
+  }
+
+  &::after{
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 768px;
+      height: 22px;
+      background: url("../img/zigzag-fill-desktop.png") no-repeat;
+    }
+  }
+
   &__title {
     padding: 75px 0px;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 40px;
+      padding-bottom: 90px;
+    }
   }
 }
