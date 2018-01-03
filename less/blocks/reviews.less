@@ -11,12 +11,19 @@
     left: 0;
     width: 320px;
     height: 7px;
-    background: url("../img/zigzag-line-desktop.png") no-repeat;
+    background: url("../img/zigzag-line-mobile.png") no-repeat;
 
     @media (min-width: @tablet-width) {
       width: 768px;
       height: 18px;
       background: url("../img/zigzag-line-tablet.png");
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1050px;
+      height: 23px;
+      background: url("../img/zigzag-line-desktop.png") no-repeat;
+      left: 50px;
     }
   }
 
@@ -25,6 +32,11 @@
     position: relative;
     padding: 85px 50px 120px 50px;
     background: url("../img/review.jpg") no-repeat 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 80px 50px 170px 225px;
+    background-position: 50px 0px;
   }
 
   &__title {
@@ -52,6 +64,10 @@
     @media (min-width: @tablet-width) {
       font-size: 17px;
       padding-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 108px;
     }
   }
 
@@ -81,6 +97,10 @@
       bottom: 120px;
       right: 50px;
       padding-bottom: 0px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 170px;
     }
   }
 

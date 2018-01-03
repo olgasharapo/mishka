@@ -2,4 +2,30 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
+  &__list {
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    @media (min-width: @desktop-width) {
+      color: @color-main;
+      padding: 0px 30px;
+      font-weight: 700;
+    }
+  }
+
+  &__item:first-of-type {
+    .secondary-nav__link {
+      @media (min-width: @desktop-width) {
+        padding-left: 0px;
+      }
+    }
+  }
 }

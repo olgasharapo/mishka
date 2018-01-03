@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     position: relative;
     padding: 0 50px;
+    background: url("../img/hero-tablet.jpg") no-repeat 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
     background: url("../img/hero-desktop.jpg") no-repeat 0 0;
   }
 
@@ -15,7 +19,14 @@
       left: 0;
       width: 768px;
       height: 22px;
+      background: url("../img/zigzag-fill-tablet.png") no-repeat;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1250px;
+      height: 34px;
       background: url("../img/zigzag-fill-desktop.png") no-repeat;
+      bottom: -20px;
     }
   }
 
@@ -27,6 +38,12 @@
       padding: 100px 85px 365px 85px;
       font-size: 43px;
       line-height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 100px 175px 355px 175px;
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 
@@ -48,6 +65,11 @@
       font-size: 20px;
       line-height: 30px;
       padding-left: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 525px;
+      padding-right: 360px;
     }
 
     &:active {

@@ -9,6 +9,10 @@
     top: 0;
   }
 
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
+
   &__toggle {
     position: absolute;
     top: -45px;
@@ -40,11 +44,26 @@
       }
 
       &--site-list {
+        .main-nav__item:first-of-type {
+          @media (min-width: @desktop-width) {
+            border-right: 1px solid #ececec;
+          }
+
+          .main-nav__link {
+            padding-left: 0px;
+          }
+        }
+
         @media (min-width: @tablet-width) {
           position: absolute;
           top: 88px;
           left: -125px;
           z-index: 2;
+        }
+
+        @media (min-width: @desktop-width) {
+          top: 0;
+          left: 0;
         }
       }
     }
@@ -111,6 +130,11 @@
         padding: 20px 13px;
         border: none;
         background-color: transparent;
+      }
+
+      @media (min-width: @desktop-width) {
+        padding: 35px;
+        line-height: 18px;
       }
     }
 
